@@ -211,7 +211,7 @@
          alt="LinkedIn"
          style="height: 32px; width: auto; vertical-align: middle;">
   </a>
-  <p>2025 Sakurako Kingsbury</p>
+  <p>2026 Sakurako Kingsbury</p>
 </footer>
 
 <script>
@@ -267,5 +267,26 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 </script>
 
+<script>
+  const resumeToggle = document.querySelector('.resume-toggle');
+  const moreExperience = document.getElementById('more-experience');
+
+  if (resumeToggle && moreExperience) {
+    resumeToggle.addEventListener('click', () => {
+      const isHidden = moreExperience.hasAttribute('hidden');
+
+      if (isHidden) {
+        moreExperience.removeAttribute('hidden');
+        resumeToggle.setAttribute('aria-expanded', 'true');
+        resumeToggle.querySelector('span').textContent = 'Show less experience';
+      } else {
+        moreExperience.setAttribute('hidden', '');
+        resumeToggle.setAttribute('aria-expanded', 'false');
+        resumeToggle.querySelector('span').textContent = 'Show more experience';
+      }
+    });
+  }
+</script>
+  
 </body>
 </html>

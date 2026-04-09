@@ -27,6 +27,45 @@ img {
   border: none;
 }
 
+.resume-toggle {
+  width: calc(100% + 1.5rem);
+  margin: 1rem 0 0 -1.5rem;
+  padding: 0.85rem 1.25rem 0.85rem 2.1rem;
+  border: 1px solid #2b2b2b;
+  border-left: 2px solid #000;
+  border-radius: 0 0 var(--radius) var(--radius);
+  background: #191818;
+  color: #ddd;
+  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.resume-toggle:hover {
+  background: #242424;
+}
+
+.resume-toggle-arrow {
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+.resume-toggle[aria-expanded="true"] .resume-toggle-arrow {
+  transform: rotate(180deg);
+}
+
+.resume-extra {
+  margin-top: 1.5rem;
+}
+
+.resume-extra[hidden] {
+  display: none;
+}
+
 /* Sidebar */
 .sidebar {
   position: fixed;

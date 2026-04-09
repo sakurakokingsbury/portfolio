@@ -28,27 +28,24 @@ img {
 }
 
 .resume-toggle {
-  width: calc(100% + 1.5rem);
-  margin: 1rem 0 0 -1.5rem;
-  padding: 0.85rem 1.25rem 0.85rem 2.1rem;
-  border: 1px solid #2b2b2b;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 0.85rem 1.25rem;
   border-left: 2px solid #000;
-  border-radius: 0 0 var(--radius) var(--radius);
-  background: #191818;
-  color: #ddd;
-  font-family: 'Franklin Gothic Medium', Arial, sans-serif;
-  font-size: 1rem;
+  border-radius: var(--radius);
   display: flex;
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
-  transition: background-color 0.25s ease, transform 0.25s ease;
+  background: rgba(25, 24, 24, 0.6); /* transparency */
+  backdrop-filter: blur(6px);        /* nice glass effect */
+  -webkit-backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.08);
 }
 
 .resume-toggle:hover {
-  background: #242424;
+  background: rgba(25, 24, 24, 0.8);
 }
-
 .resume-toggle-arrow {
   display: inline-block;
   transition: transform 0.25s ease;

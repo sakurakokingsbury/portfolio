@@ -1,19 +1,277 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Automatic Plant Watering System | Sakurako Kingsbury</title>
-  <link rel="stylesheet" href="../style.css" />
-</head>
-<body>
-  <section>
-    <div class="container">
-      <a href="../index.html" class="button secondary">← Back to Portfolio</a>
-      <h2>Automatic Plant Watering System</h2>
-      <img src="../images/plant assembly.png" alt="Automatic Plant Watering System" style="max-width: 600px; width: 100%; border-radius: 0.5rem; margin-bottom: 1.5rem;">
-      <p>Write your full project details here.</p>
+<main class="project-page">
+
+  <a href="../index.html#projects" class="button secondary">← Back to All Projects</a>
+
+  <!-- Hero -->
+  <section class="project-hero">
+    <div class="project-hero-text">
+      <p class="project-label">Featured Project</p>
+      <h1>Smart Watering System</h1>
+      <p class="project-subtitle">
+        Designed and built an automated indoor plant watering system that monitors environmental
+        conditions, actuates a valve with a servo motor, and publishes sensor data to an IoT network
+        over multiple days of deployment.
+      </p>
+
+      <div class="project-tags">
+        <span>Product Design</span>
+        <span>IoT</span>
+        <span>Embedded Systems</span>
+        <span>SolidWorks</span>
+        <span>Arduino</span>
+      </div>
+    </div>
+
+    <div class="project-hero-image">
+      <img src="../images/plant assembly.png" alt="Final smart watering system mounted on plant pot">
     </div>
   </section>
-</body>
-</html>
+
+  <!-- Overview -->
+  <section class="project-section">
+    <h2>Project Overview</h2>
+    <p>
+      This project focused on designing and manufacturing a compact automated watering system
+      for indoor potted plants. The device was designed to fit a small pot, hold a water supply,
+      monitor the plant environment, and automatically release water when soil conditions required it.
+      The system also published sensor data to the Stevens IoT network for long-term monitoring. 
+      :contentReference[oaicite:2]{index=2}
+    </p>
+    <p>
+      The final system measured four key parameters: soil moisture, atmospheric temperature,
+      air humidity, and illuminance. It combined mechanical design, sensor integration, code
+      development, and deployment testing in one product. :contentReference[oaicite:3]{index=3}
+    </p>
+  </section>
+
+  <!-- Key Results -->
+  <section class="project-section">
+    <h2>Key Results</h2>
+    <div class="results-grid">
+      <div class="result-card">
+        <h3>4</h3>
+        <p>Sensors integrated into the final system</p>
+      </div>
+      <div class="result-card">
+        <h3>4 days</h3>
+        <p>Data successfully collected after deployment</p>
+      </div>
+      <div class="result-card">
+        <h3>2h 16m</h3>
+        <p>Final print time for the mechanical design</p>
+      </div>
+      <div class="result-card">
+        <h3>10 sec</h3>
+        <p>Sensor publishing interval to the IoT network</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contributions -->
+  <section class="project-section">
+    <h2>My Contributions</h2>
+    <ul class="project-list">
+      <li>Created the selected concept design and developed the final CAD model in SolidWorks.</li>
+      <li>Redesigned the printed part after the first iteration to improve fit and include the water container.</li>
+      <li>Designed the final clamp-on structure to fit a small indoor plant pot while keeping electronics elevated away from water.</li>
+      <li>Helped develop and debug the Arduino code for sensors, servo actuation, and IoT data publishing.</li>
+      <li>Tested servo angles and deployment behavior to ensure reliable watering performance.</li>
+    </ul>
+    <p>
+      According to the report and presentation script, your design was the one selected from the
+      initial concept sketches because it best met the project constraints and objectives, and you
+      took the lead on the finalized CAD model and printed design. 
+    </p>
+  </section>
+
+  <!-- Mechanical Design -->
+  <section class="project-section">
+    <h2>Mechanical Design</h2>
+    <div class="project-two-column">
+      <div>
+        <p>
+          The final design was a compact 3D-printed attachment that clamps onto the side of a plant
+          pot rather than replacing the pot itself. This approach saved space, kept the product visually
+          sleek, and allowed it to support the water bottle, valve, and electronic components in one
+          integrated structure. 
+        </p>
+        <p>
+          After the first print, the model was revised because some components did not fit correctly
+          and the initial version forgot to account for the water container. The updated design was
+          adjusted to fit the pot more snugly and keep the electronics positioned in the back so they
+          would stay away from water exposure. 
+        </p>
+      </div>
+
+      <div class="project-image-block">
+        <img src="../images/plant exploded view.png" alt="Exploded view of smart watering system design">
+        <p class="image-caption">Exploded view of the final watering system assembly.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Design Process -->
+  <section class="project-section">
+    <h2>Design Process</h2>
+    <p>
+      The project began with hand sketches from each team member, followed by evaluation of
+      multiple concepts against the assignment requirements. The chosen design was selected
+      because it best met the print time, size, and component-integration constraints. Alternative
+      designs were rejected because they were either too large to print in time or did not provide
+      enough space for all required hardware. 
+    </p>
+
+    <div class="iteration-grid">
+      <div class="iteration-card">
+        <h3>Concept Sketching</h3>
+        <p>
+          Each teammate created an initial concept sketch to explore form, mounting strategy,
+          and component layout.
+        </p>
+      </div>
+
+      <div class="iteration-card">
+        <h3>Prototype Evaluation</h3>
+        <p>
+          Early prints revealed fit issues and missing space for the water container, requiring
+          redesign before final deployment.
+        </p>
+      </div>
+
+      <div class="iteration-card">
+        <h3>Redesign</h3>
+        <p>
+          The selected concept was refined to clamp securely to the pot, hold the bottle upright,
+          and protect the electronics from water.
+        </p>
+      </div>
+
+      <div class="iteration-card">
+        <h3>Final Build</h3>
+        <p>
+          The final system successfully integrated the mechanical structure, sensors, servo, valve,
+          and data-publishing code into a working device.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Electronics -->
+  <section class="project-section">
+    <h2>Electronics and System Architecture</h2>
+    <div class="project-two-column">
+      <div>
+        <ul class="project-list">
+          <li>Soil moisture sensor</li>
+          <li>DHT sensor for temperature and air humidity</li>
+          <li>Photocell for illuminance measurement</li>
+          <li>Servo motor for valve actuation</li>
+          <li>Microcontroller and IoT publishing setup</li>
+        </ul>
+
+        <p>
+          The system architecture centered on a microcontroller that processed input from
+          the sensors and used a servo motor to open and close the valve when the soil
+          moisture dropped below a threshold. The system then published readings to the
+          course network on a repeating interval. :contentReference[oaicite:8]{index=8}
+        </p>
+      </div>
+
+      <div class="project-image-block">
+        <img src="../images/plant assembly.png" alt="Assembled smart watering system">
+        <p class="image-caption">Final physical assembly mounted onto the plant pot.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Software -->
+  <section class="project-section">
+    <h2>Software and Control Logic</h2>
+    <p>
+      The software collected readings from the DHT sensor, photocell, and soil moisture sensor,
+      converted raw measurements where needed, and published the data to MQTT topics on the
+      Stevens IoT network. The system was configured to publish every 10 seconds. :contentReference[oaicite:9]{index=9}
+    </p>
+    <p>
+      Watering behavior was controlled through a soil-moisture threshold: when soil humidity fell
+      below the chosen value, the servo opened the valve, held it open briefly, and then returned it
+      to the closed position. The servo open and close angles were found experimentally through
+      testing. :contentReference[oaicite:10]{index=10}
+    </p>
+  </section>
+
+  <!-- Challenges -->
+  <section class="project-section">
+    <h2>Challenges and Engineering Decisions</h2>
+    <div class="challenge-list">
+      <div class="challenge-item">
+        <h3>First print had fit issues</h3>
+        <p>
+          The initial print did not correctly fit all required parts and did not include enough room
+          for the water container, so the design had to be revised and reprinted.
+        </p>
+      </div>
+
+      <div class="challenge-item">
+        <h3>Valve and servo integration</h3>
+        <p>
+          The valve had to be partially disassembled and modified so the servo could actuate it
+          without excessive strain.
+        </p>
+      </div>
+
+      <div class="challenge-item">
+        <h3>Sensor code debugging</h3>
+        <p>
+          A soil humidity issue appeared only in the main sketch, even though the sensor worked in
+          isolation, which required rebuilding the code structure during debugging.
+        </p>
+      </div>
+
+      <div class="challenge-item">
+        <h3>IoT publishing failure during deployment</h3>
+        <p>
+          The deployed system initially collected data locally but failed to publish it online until the
+          missing <code>mqtt_loop();</code> line was identified and added.
+        </p>
+      </div>
+    </div>
+    <p>
+      These issues are described directly in the final report, especially the redesign of the print,
+      the servo angle testing, and the missing MQTT loop that prevented successful data publishing
+      until the final fix. :contentReference[oaicite:11]{index=11}
+    </p>
+  </section>
+
+  <!-- Performance -->
+  <section class="project-section">
+    <h2>Design Performance</h2>
+    <p>
+      After deployment, the system successfully collected and published multi-day data showing
+      expected trends in temperature, humidity, soil moisture, and illuminance. The report notes
+      that illuminance varied more significantly than temperature, while moisture-related data
+      changed in response to watering events and environmental conditions. :contentReference[oaicite:12]{index=12}
+    </p>
+    <p>
+      The finished design met the project requirements by fitting the pot, monitoring all four
+      variables, automatically controlling water flow, and publishing sensor data to the network. 
+      :contentReference[oaicite:13]{index=13}
+    </p>
+  </section>
+
+  <!-- Reflection -->
+  <section class="project-section">
+    <h2>What I Learned</h2>
+    <p>
+      This project taught me how to design a compact product around real hardware constraints,
+      especially when mechanical fit, electronics placement, water exposure, and print time all had
+      to be considered at once. It also gave me experience debugging embedded systems in a way
+      that connected physical design decisions directly to software behavior.
+    </p>
+    <p>
+      It was also one of my earlier projects where I had to iterate quickly between CAD, printing,
+      assembly, and code troubleshooting until the system worked as a complete product.
+    </p>
+  </section>
+
+</main>

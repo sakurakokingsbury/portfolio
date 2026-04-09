@@ -120,11 +120,6 @@
               </ul>
             </div>
             
-            <button class="resume-toggle" type="button" aria-expanded="false" aria-controls="more-experience">
-              <span>Show more experience</span>
-              <span class="resume-toggle-arrow">▼</span>
-            </button>
-            
             <div class="resume-extra" id="more-experience" hidden>
 
             <div class="resume-item">
@@ -154,7 +149,7 @@
             </div>
           </div>
           <button class="resume-toggle" type="button" aria-expanded="false" aria-controls="more-experience">
-            <span class="resume-toggle-text">Show more experience</span>
+            <span class="resume-toggle-text">Show More</span>
             <span class="resume-toggle-arrow">▼</span>
           </button>
         </div>
@@ -274,19 +269,20 @@ document.addEventListener("DOMContentLoaded", function() {
 <script>
   const resumeToggle = document.querySelector('.resume-toggle');
   const moreExperience = document.getElementById('more-experience');
+  const toggleText = document.querySelector('.resume-toggle-text');
 
-  if (resumeToggle && moreExperience) {
+  if (resumeToggle && moreExperience && toggleText) {
     resumeToggle.addEventListener('click', () => {
       const isHidden = moreExperience.hasAttribute('hidden');
 
       if (isHidden) {
         moreExperience.removeAttribute('hidden');
         resumeToggle.setAttribute('aria-expanded', 'true');
-        resumeToggle.querySelector('span').textContent = 'Show less experience';
+        toggleText.textContent = 'Show less experience';
       } else {
         moreExperience.setAttribute('hidden', '');
         resumeToggle.setAttribute('aria-expanded', 'false');
-        resumeToggle.querySelector('span').textContent = 'Show more experience';
+        toggleText.textContent = 'Show more experience';
       }
     });
   }

@@ -1,19 +1,253 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Autonomous Navigation Robot | Sakurako Kingsbury</title>
-  <link rel="stylesheet" href="../style.css" />
-</head>
-<body>
-  <section>
-    <div class="container">
-      <a href="../index.html" class="button secondary">← Back to Portfolio</a>
-      <h2>Autonomous Navigation Robot</h2>
-      <img src="../images/navi assembly.png" alt="Autonomous Navigation Robot" style="max-width: 600px; width: 100%; border-radius: 0.5rem; margin-bottom: 1.5rem;">
-      <p>Write your full project details here.</p>
+<main class="project-page">
+
+  <!-- Hero -->
+  <section class="project-hero">
+    <div class="project-hero-text">
+      <p class="project-label">Featured Project</p>
+      <h1>Autonomous Navigation Robot</h1>
+      <p class="project-subtitle">
+        Designed and built a fully autonomous robot capable of navigating an obstacle course
+        using ultrasonic sensing and coordinate-based pathfinding, completing the final course
+        in 1 minute 21 seconds with zero collisions.
+      </p>
+
+      <div class="project-tags">
+        <span>Robotics</span>
+        <span>Mechanical Design</span>
+        <span>Embedded Systems</span>
+        <span>SolidWorks</span>
+        <span>Arduino</span>
+      </div>
+    </div>
+
+    <div class="project-hero-image">
+      <img src="images/navigation-robot/final-robot.jpg" alt="Final autonomous navigation robot" />
     </div>
   </section>
-</body>
-</html>
+
+  <!-- Overview -->
+  <section class="project-section">
+    <h2>Project Overview</h2>
+    <p>
+      This project focused on designing and manufacturing an autonomous robot that could
+      safely navigate a constrained arena, avoid obstacles, and stop at designated target
+      locations. The system combined custom mechanical design, embedded electronics,
+      and sensor-based navigation into a compact final build.
+    </p>
+    <p>
+      The robot used ultrasonic sensors for obstacle detection and real-time coordinate data
+      to move toward target points while staying within competition constraints.
+    </p>
+  </section>
+
+  <!-- Key Results -->
+  <section class="project-section">
+    <h2>Key Results</h2>
+    <div class="results-grid">
+      <div class="result-card">
+        <h3>1:21</h3>
+        <p>Final course completion time</p>
+      </div>
+      <div class="result-card">
+        <h3>0</h3>
+        <p>Collisions during final run</p>
+      </div>
+      <div class="result-card">
+        <h3>3h 41m</h3>
+        <p>Single-part chassis print time</p>
+      </div>
+      <div class="result-card">
+        <h3>3</h3>
+        <p>Ultrasonic sensors integrated</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contributions -->
+  <section class="project-section">
+    <h2>My Contributions</h2>
+    <ul class="project-list">
+      <li>Designed and iterated a custom 3D-printed chassis in SolidWorks.</li>
+      <li>Helped optimize sensor placement for obstacle detection and coverage.</li>
+      <li>Improved mechanical stability, mounting features, and wire organization.</li>
+      <li>Contributed to integration of the robot’s autonomous navigation system.</li>
+      <li>Helped refine the final build into a compact, manufacturable design.</li>
+    </ul>
+  </section>
+
+  <!-- Mechanical Design -->
+  <section class="project-section">
+    <h2>Mechanical Design</h2>
+    <div class="project-two-column">
+      <div>
+        <p>
+          The chassis was designed as a single printed part to reduce assembly complexity,
+          minimize print failures, and keep the robot compact. The final geometry included
+          integrated ultrasonic sensor mounts, an OLED display mount, a GPS float socket,
+          and a crate-style compartment for the electronics.
+        </p>
+        <p>
+          This approach improved wire management, reduced bolt count, and kept the robot
+          close to the footprint of the base chassis while still securely holding all required
+          components.
+        </p>
+      </div>
+
+      <div class="project-image-block">
+        <img src="images/navigation-robot/final-drawing.jpg" alt="Engineering drawing of final robot chassis" />
+        <p class="image-caption">Final chassis drawing and integrated mounting features.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Iteration -->
+  <section class="project-section">
+    <h2>Design Iteration</h2>
+    <p>
+      One of the most important parts of this project was the repeated design iteration.
+      The chassis went through multiple revisions to improve stability, fit, manufacturability,
+      and sensor performance.
+    </p>
+
+    <div class="iteration-grid">
+      <div class="iteration-card">
+        <h3>Early Iterations</h3>
+        <p>
+          Focused on basic fit, board mounting, and creating an initial sensor mount for testing.
+        </p>
+      </div>
+
+      <div class="iteration-card">
+        <h3>Mid Iterations</h3>
+        <p>
+          Added more ultrasonic sensors, adjusted board placement, and improved chassis layout
+          for increased sensing coverage.
+        </p>
+      </div>
+
+      <div class="iteration-card">
+        <h3>Later Iterations</h3>
+        <p>
+          Improved motor stability, reduced wire interference, strengthened sensor mounts,
+          and adapted the design to replace the breadboard with a PCB.
+        </p>
+      </div>
+
+      <div class="iteration-card">
+        <h3>Final Design</h3>
+        <p>
+          Introduced a compact crate-style structure, tighter sensor mounts, OLED display support,
+          and a GPS float socket for reliable final performance.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Electronics -->
+  <section class="project-section">
+    <h2>Electronics and System Architecture</h2>
+    <div class="project-two-column">
+      <div>
+        <ul class="project-list">
+          <li>Wemos D1R1 (ESP8266) microcontroller</li>
+          <li>3 ultrasonic sensors for obstacle detection</li>
+          <li>Motor driver and DC motors for movement</li>
+          <li>OLED screen for real-time coordinate display</li>
+          <li>Custom PCB for power and ground distribution</li>
+        </ul>
+
+        <p>
+          The electrical layout was kept organized with a color-coded wiring scheme and zip ties
+          to improve readability, maintenance, and reliability.
+        </p>
+      </div>
+
+      <div class="project-image-block">
+        <img src="images/navigation-robot/circuit-diagram.jpg" alt="Navigation robot wiring diagram" />
+        <p class="image-caption">System wiring and board-to-sensor connections.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Software -->
+  <section class="project-section">
+    <h2>Autonomous Navigation Logic</h2>
+    <p>
+      The robot used coordinate-based target navigation combined with real-time obstacle avoidance.
+      Its software continuously calculated movement relative to target positions while using ultrasonic
+      sensor readings to detect walls and obstacles and adjust direction when needed.
+    </p>
+    <p>
+      This allowed the robot to move autonomously through the arena while remaining collision-free
+      during the final run.
+    </p>
+  </section>
+
+  <!-- Challenges -->
+  <section class="project-section">
+    <h2>Challenges and Engineering Decisions</h2>
+    <div class="challenge-list">
+      <div class="challenge-item">
+        <h3>Sensor mounts were too loose</h3>
+        <p>
+          I revised the mount geometry and tightened tolerances so the ultrasonic sensors stayed
+          secure during testing and final operation.
+        </p>
+      </div>
+
+      <div class="challenge-item">
+        <h3>Wires interfered with moving parts</h3>
+        <p>
+          I helped improve wire routing and added structural protection to keep wires away from the wheels.
+        </p>
+      </div>
+
+      <div class="challenge-item">
+        <h3>Motors shifted during operation</h3>
+        <p>
+          The chassis was widened and stabilized to reduce movement and improve repeatable driving.
+        </p>
+      </div>
+
+      <div class="challenge-item">
+        <h3>Final design constraints changed</h3>
+        <p>
+          When breadboards were no longer allowed, the design was adapted to use a PCB while still
+          maintaining a compact and organized layout.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="project-section">
+    <h2>Project Gallery</h2>
+    <div class="project-gallery">
+      <img src="images/navigation-robot/iteration-1.jpg" alt="Early chassis iteration" />
+      <img src="images/navigation-robot/iteration-2.jpg" alt="Intermediate chassis iteration" />
+      <img src="images/navigation-robot/final-build-top.jpg" alt="Top view of final navigation robot" />
+      <img src="images/navigation-robot/final-build-side.jpg" alt="Side view of final navigation robot" />
+    </div>
+  </section>
+
+  <!-- Reflection -->
+  <section class="project-section">
+    <h2>What I Learned</h2>
+    <p>
+      This project strengthened my skills in CAD-driven design iteration, physical prototyping,
+      component integration, and engineering problem-solving under real constraints. It also gave
+      me experience balancing performance, manufacturability, wiring organization, and sensor placement
+      in a compact robotics system.
+    </p>
+  </section>
+
+  <!-- Links -->
+  <section class="project-section">
+    <h2>Project Files</h2>
+    <div class="project-links">
+      <a href="files/navigation-robot-report.pdf" target="_blank">View Technical Report</a>
+      <a href="files/navigation-robot-drawing.pdf" target="_blank">View Assembly Drawing</a>
+    </div>
+  </section>
+
+</main>

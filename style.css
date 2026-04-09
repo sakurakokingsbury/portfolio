@@ -37,7 +37,9 @@ img {
   border-radius: var(--radius);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  font-size: 1.1rem;      /* matches your section text */
+  justify-content: center; /* centers horizontally */
+  text-align: center;
   cursor: pointer;
 }
 
@@ -52,7 +54,7 @@ img {
   background: rgba(25, 24, 24, 0.8);
 }
 
-.resume-toggle span{
+.resume-toggle {
   color: #ccc;
 }
 

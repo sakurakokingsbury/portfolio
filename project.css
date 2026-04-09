@@ -1,0 +1,159 @@
+.project-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+.project-hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.project-hero-text {
+  flex: 1 1 500px;
+}
+
+.project-hero-image {
+  flex: 1 1 400px;
+}
+
+.project-hero-image img,
+.project-image-block img,
+.project-gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+}
+
+.project-label {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.project-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 18px;
+}
+
+.project-subtitle {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 700px;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.project-tags span {
+  padding: 8px 14px;
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 999px;
+  font-size: 0.95rem;
+}
+
+.project-section {
+  margin-bottom: 70px;
+}
+
+.project-section h2 {
+  font-size: 2rem;
+  margin-bottom: 18px;
+}
+
+.project-section p {
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.results-grid,
+.iteration-grid,
+.challenge-list,
+.project-gallery {
+  display: grid;
+  gap: 20px;
+}
+
+.results-grid {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.iteration-grid,
+.challenge-list {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.project-gallery {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.result-card,
+.iteration-card,
+.challenge-item {
+  padding: 22px;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.result-card h3 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.project-two-column {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.project-list {
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+.image-caption {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  opacity: 0.75;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.project-links a {
+  display: inline-block;
+  padding: 12px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: 0.2s ease;
+}
+
+.project-links a:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 800px) {
+  .project-hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .project-two-column {
+    grid-template-columns: 1fr;
+  }
+}

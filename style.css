@@ -52,8 +52,12 @@ img {
   background: rgba(25, 24, 24, 0.8);
 }
 
-.resume-toggle span {
+.resume-toggle span{
   color: #ccc;
+}
+
+.resume-toggle:hover {
+  color: #fff;
 }
 
 .resume-toggle-arrow {
